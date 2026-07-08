@@ -44,5 +44,10 @@ def create_app(config=None):
 
 
 if __name__ == "__main__":
+    # In powershell, run .\.venv\Scripts\Activate.ps1
+    # $env:FLASK_APP = "app:create_app"
+    # flask run
+    # .\.venv\Scripts\Activate.ps1; pip show flask; $env:FLASK_APP = "app:create_app"; flask run
+
     app = create_app()
     app.run(debug=True)
